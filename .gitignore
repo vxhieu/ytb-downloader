@@ -36,14 +36,22 @@ ENV/
 # OS
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Project specific
+config.json
 *.log
 extraction_log.txt
-snapshots/
-output/
-test_videos/
 
+# Keep example config
+!config.json.example
 
+# Test
+.pytest_cache/
+.coverage
+htmlcov/
 
-
+# Temporary files
+*.tmp
+*.bak
+*.cache
